@@ -3,7 +3,7 @@ module Liquid
   GVAR     = /[a-z_][a-z_0-9]*(\.[a-z_][a-z_0-9]*)*/
   VAR      = /[a-z_][a-z_0-9]*(?:\.[a-z_][a-z_0-9]*)*/
 
-  STRING      = /"[^"]*"/
+  STRING      = /[^"]*/
   INT         = /-?[1-9][0-9]*/
   FLOAT       = /#{INT}\.[0-9]+/
   TYPE        = /(?:#{STRING})|(?:#{FLOAT})|(?:#{INT})/
